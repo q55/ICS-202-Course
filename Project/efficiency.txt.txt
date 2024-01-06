@@ -1,0 +1,22 @@
+Dictionary Class Method Time Complexity Analysis
+
+1. addWord(String s): O(log n)
+   - Description: Inserts a word into the AVL tree. 
+
+2. findWord(String s): O(log n)
+   - Description: Searches for a word in the AVL tree.
+
+3. deleteWord(String s): O(log n)
+   - Description: Deletes a word from the AVL tree. 
+
+4. findSimilar(String s): O(n)
+   - Description: Finds words similar to a given word by traversing the entire tree. 
+
+5. saveToFile(String filename): O(n)
+   - Description: Saves the entire dictionary to a file, requiring traversal of the entire tree. 
+
+6. Constructors:
+   - Dictionary(): O(1) - Initializes an empty AVL tree.
+   - Dictionary(String s): O(log n) - Adds a single word.
+   - Dictionary(File f): O(n log n) - Adds words from a file; each addition is O(log n).
+
